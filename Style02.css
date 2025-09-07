@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{                  /*div block of Main-Image*/
+    /* margin: 20px; */
+    background-image: url(bg.jpg) ;
+    background-size: max(120vh, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    
+    
+    
+}
+.overlay{                   /*Background_Image mai opacity lane ke liye*/
+    height: 644px;
+    width: 100%;
+    opacity: 0.52;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
+.Netflix_SVG {   
+    position: relative;       /*Netflix ka SVG*/
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    z-index: 10;
+    /* display: block; */
+}
+nav{                    /*NavBar*/
+    margin:auto;
+    justify-content:space-between;
+    display:flex;
+    align-items: center;
+    height: 62px;
+    max-width: 62vw;
+}
+nav select,button {
+    position: relative;
+    z-index: 10;
+}
+.box {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+
+/* har ek element ko style dene ke liye inside .box*/
+.box> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 44px;
+    
+}
+.box> :nth-child(2) {
+    font-weight:600;
+    font-size: 24px;
+
+}
+.box  :nth-child(3) {
+    font-weight:600;
+    font-size: 20px;
+
+}
+
+.seperation{            /*Seperation lines*/
+    background-color: rgb(59 59 63);
+    height: 7px;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 7px 9px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.btn{
+    background-color:rgba(69, 64, 64, 0.537);
+    color: white;
+    padding: 5px 4px;
+    border-radius: 3px;
+}
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    
+}
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+.faq{
+    
+    color:white;
+    padding: 34px;
+}
+.faq h2{
+    font-size:48px;
+    font-weight:700;
+    text-align: center;
+}
+.faqbox {
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+.faqbox:hover {
+    background-color: #5f5c5c;
+    color: white;
+}
+.faqbox svg {
+    filter:invert(1);
+}
+
+.faqbox:hover {                 /*Hover pe background color change hoga*/
+    background-color: #5f5c5c;
+}
+.faqbox .answer {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #3c3c3c;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Initially hide the answer */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.faqbox:hover .answer{
+    display:block;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
