@@ -22,14 +22,3 @@ Perfect for learning and practicing frontend development skills.
 - **JavaScript** – interactivity  
 
 ---
-
-## 📸 Screenshots
-(Add screenshots/gifs of your landing page here for better presentation)  
-
----
-
-## ⚡ Getting Started
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/netflix-landing-page-clone.git
